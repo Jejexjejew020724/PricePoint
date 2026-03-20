@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.env
+.env.local
+.env.*
+**/node_modules/
+**/.env
+**/.env.local
+build/
+bin/
+*.exe
