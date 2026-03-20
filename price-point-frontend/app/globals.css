@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  /* Official Firebase Palette */
+  --color-firebase-yellow: #ffc400;
+  --color-firebase-orange: #ff9100;
+  --color-firebase-red: #dd2c00;
+  --color-firebase-navy: #039be5;
+  --color-firebase-dark: #1a237e;
+  --color-firebase-gray: #f5f6f7;
+  --color-firebase-border: #e0e0e0;
+
+  /* Firebase Custom Gradient (Yellow to Orange) */
+  --background-image-firebase-gradient: linear-gradient(
+    135deg,
+    #ffc400 0%,
+    #ff9100 100%
+  );
+  --background-image-firebase-header: linear-gradient(
+    90deg,
+    #1a237e 0%,
+    #039be5 100%
+  );
+
+  /* Custom Animations */
+  --animate-floating: floating 3s ease-in-out infinite;
+  --animate-bounce-short: bounce-short 0.5s ease-in-out 1;
+  --animate-shake: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) 1;
+
+  @keyframes floating {
+    0%,
+    100% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, -15px);
+    }
+  }
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+}

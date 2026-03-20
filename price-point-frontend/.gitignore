@@ -1,0 +1,19 @@
+# Dependency
+node_modules/
+**/node_modules/
+
+# Next.js
+.next/
+**/ .next/
+
+# Environment Files (SANGAT PENTING)
+.env
+.env.local
+.env.*
+**/.env
+**/.env.local
+
+# Build files
+dist/
+bin/
+*.exe
